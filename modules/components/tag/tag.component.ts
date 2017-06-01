@@ -39,6 +39,11 @@ export class TagComponent {
     @Input() public model: TagModel;
 
     /**
+	 * @name readonly {boolean}		
+     */		
+    @Input() public readonly: boolean;		
+		
+    /**
      * @name removable {boolean}
      */
     @Input() public removable: boolean;
@@ -107,13 +112,6 @@ export class TagComponent {
      * @type {EventEmitter<any>}
      */
     @Output() public onTagEdited: EventEmitter<TagModel> = new EventEmitter<TagModel>();
-
-    /**
-     * @name readonly {boolean}
-     */
-    public get readonly(): boolean {
-        return typeof this.model !== 'string' && this.model.readonly === true;
-    };
 
     /**
      * @name editModeActivated

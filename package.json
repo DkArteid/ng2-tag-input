@@ -1,7 +1,7 @@
 {
-  "name": "ng2-tag-input",
-  "version": "1.2.9",
-  "description": "Tag Input component for Angular",
+  "name": "eita",
+  "version": "1.0.0",
+  "description": "This is just a simple changed version 1.2.9 of the ng2-tag-input (by Giancarlo Buomprisco) to add readonly back and to fix problem with Drag and Drop on IE/Edge",
   "scripts": {
     "prepublish": "npm run clean && npm run build",
     "build": "webpack && npm run tsc && npm run moveassets && npm run ngc",
@@ -15,10 +15,7 @@
     "codecov": "codecov",
     "clean": "rm -rf ./dist && rm -rf ./factories"
   },
-  "author": {
-    "name": "Giancarlo Buomprisco",
-    "email": "giancarlopsk@gmail.com"
-  },
+  "author": "DkArteid <eduardo.muraoka@gmail.com>",
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
@@ -91,7 +88,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gbuomprisco/ng2-tag-input"
+    "url": "git+https://github.com/Gbuomprisco/ng2-tag-input.git"
   },
   "bugs": {
     "url": "https://github.com/Gbuomprisco/ng2-tag-input/issues"
@@ -103,5 +100,8 @@
     "index.ts",
     "tsconfig.json",
     "tsconfig.aot.json"
-  ]
+  ],
+  "directories": {
+    "doc": "docs"
+  }
 }
